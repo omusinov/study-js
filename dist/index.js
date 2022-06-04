@@ -1,8 +1,10 @@
+'use strict';
+
 console.log('Hello World!!!');
 
 if (true) {
   var a = 'VAR';
-  let b = 'LET'
+  var _b = 'LET';
 }
 
 console.log('A = ', a);

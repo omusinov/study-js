@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./app/index.js",
   "scripts": {
+    "watch": "babel app -d dist --presets env -w",
     "start": "node ./app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/omusinov/study-js/issues"
   },
-  "homepage": "https://github.com/omusinov/study-js#readme"
+  "homepage": "https://github.com/omusinov/study-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
 }
