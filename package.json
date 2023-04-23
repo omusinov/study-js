@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./app/index.js",
   "scripts": {
-    "watch": "babel app -d dist --presets env -w",
+    "watch": "babel app -d dist --plugins transform-object-rest-spread --presets env -w",
     "start": "node ./app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0"
   }
 }

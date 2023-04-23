@@ -1,9 +1,5 @@
-console.log('Hello World!!!');
-
-if (true) {
-  var a = 'VAR';
-  let b = 'LET'
+function res(arg, arg1, arg2, ...r) {
+  console.log(arg, arg1, arg2, r);
 }
 
-console.log('A = ', a);
-console.log('B = ', b);
+res(1,2,3,4,5,6,7);

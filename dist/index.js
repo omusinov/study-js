@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-console.log('Hello World!!!');
+function res(arg) {
+  for (var _len = arguments.length, rest = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    rest[_key - 1] = arguments[_key];
+  }
 
-if (true) {
-  var a = 'VAR';
-  var _b = 'LET';
+  console.log(arg, rest);
 }
 
-console.log('A = ', a);
-console.log('B = ', b);
+res(1, 2, 3, 4, 5, 6, 7);
